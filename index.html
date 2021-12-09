@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+		<title>Хеш-функції SHA</title>
+		<link rel="stylesheet" href="css/style.min.css" />
+	</head>
+	<body>
+		<div class="main">
+			
+			<div class="shift">
+				<h1>Хеш функція: </h1>
+				<select name="hash-func" id="hash-func">
+					<option value="SHA-1" selected>SHA-1</option>
+					<option value="SHA-224">SHA-224</option>
+					<option value="SHA-256">SHA-256</option>
+					<option value="SHA-384">SHA-384</option>
+					<option value="SHA-512">SHA-512</option>
+				</select>
+			</div>
+			<div class="wrapper">
+				<textarea
+					name="text1"
+					id="text1"
+					placeholder="Введіть текст"
+				></textarea>
+				<div class="image">
+					<img src="down-arrow.png" alt="select" class="change" />
+				</div>
+				<textarea
+					name="text2"
+					id="text2"
+					readonly
+					placeholder="Результат..."
+				></textarea>
+			</div>
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha1/0.6.0/sha1.min.js" integrity="sha512-q6FuE4ifzTygTD/ug8CFnAFXl+i1zXqBWP6flRAuSWjaXrFu4Cznk8Xr+VrWMyi7fSatbssh7ufobAetvXK8Pg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.min.js" integrity="sha512-szJ5FSo9hEmXXe7b5AUVtn/WnL8a5VofnFeYC2i2z03uS2LhAch7ewNLbl5flsEmTTimMN0enBZg/3sQ+YOSzQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha512/0.8.0/sha512.min.js" integrity="sha512-KUrAWA1oxsWKHBaA2mlZyRuR8zzzHHYgpDfkfPrT3FhlZ4YdXbXyE89VHI6WmWradSHtuZjLyLAMP2F7IWK4JQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="app.js"></script>
+	</body>
+</html>
